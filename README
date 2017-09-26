@@ -1,0 +1,14 @@
+A few years ago I was interested in learning XCB, and this project is my
+attempt at porting TinyWM to XCB. It works about as well as you could expect
+from a Window Manager this simple. I include the original source because in is
+well annotated and a great way to learn Xlib programming.
+
+If you are aware of TinyWM, you will know that it is the simplest of all X
+Window Managers out there. My XCB port is no different.
+
+Requirements (on Debian):
+	* libxcb1-dev
+	* libxcb-util0-dev
+
+To build:
+	gcc -o tinywm tinywm-xcb.c -lxcb -lxcb-util
